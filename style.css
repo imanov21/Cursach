@@ -1,0 +1,379 @@
+    /* глобальные стили*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+    }
+
+    html {
+        height: 100%
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        color: #333;
+        background: #E8F9F7;
+        font-size: 1em;
+        font-family: "Segoe Ui", sans-serif;
+        line-height: 135%;
+    }
+
+    a {
+        color: #ABB1BA;
+        text-decoration: none;
+        transition: all.6s ease;
+    }
+
+    a:hover {
+        color: #32C948;
+        text-decoration: none;
+        transition: all.3s ease;
+    }
+
+    a:active {
+        color: #0036FF;
+        text-decoration: none;
+    }
+
+     ::-moz-selection {
+        background: #505050;
+        color: #FFFFFF;
+    }
+
+     ::selection {
+        background: #505050;
+        color: #FFFFFF;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    hr {
+        display: block;
+        border: 0;
+        height: 1px;
+        border-top: 1px solid #cccccc;
+        padding: 0;
+    }
+    /* классы*/
+
+    .right {
+        float: right;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .contact {
+        font-size: 1.3em;
+        font-family: "Segoe Ui", sans-serif;
+        margin-left: 20px;
+    }
+    /*стили id*/
+
+    #logo {
+        font-size: 2em;
+    }
+
+    #h3_ {
+        color: #D8CAAB;
+    }
+
+    #page-wrap:after {
+        content: "";
+        display: block;
+    }
+
+    footer,
+    #page-wrap:after {
+        height: 10px;
+    }
+
+    #page-wrap {
+        min-height: 91.4%;
+        margin-bottom: -10px;
+    }
+
+    #menu {
+        color: #666;
+        font-family: "Segoe Ui", sans-serif;
+        font-size: 1.7em;
+    }
+
+    #menu hr {
+        width: 1330px;
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #hr_ {
+        color: #666;
+        font-family: "Segoe Ui", sans-serif;
+        font-size: 1.7em;
+    }
+
+    #hr_ hr {
+        width: 400px;
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #hr_side {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /*основа страницы*/
+
+    #wrapper {
+        float: left;
+        width: 100%;
+    }
+
+    #wrapper #articles {
+        float: left;
+        width: 40%;
+        margin-left: 15%;
+    }
+
+    #wrapper #articles article {
+        float: left;
+        width: 100%;
+        border: 1px solid silver;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #fafafa;
+        margin-right: 2%;
+        margin-top: 2%;
+        min-height: 150px;
+    }
+
+    #wrapper #side_bar {
+        float: right;
+        width: 30%;
+        margin-right: 8%;
+    }
+
+    #wrapper #side_bar aside {
+        float: right;
+        width: 70%;
+        border: 1px solid silver;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #fafafa;
+        margin-right: 30%;
+        margin-top: 2%;
+        min-height: 645px;
+    }
+
+    #wrapper #side_bar #search_ {
+        width: 100%;
+    }
+
+    #input_search #input_search_ {
+        width: 170px;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid #9D9D9D;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    #search_btn {
+        display: block;
+        margin-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 160px;
+        height: 20px;
+    }
+
+    #search_ #skill_search_ {
+        text-align: center;
+    }
+
+    #skill_search_ #search_name {
+        margin-left: 1%;
+    }
+
+    #inputData {
+        margin-top: 150px;
+    }
+
+    #inputData #inputText {
+        display: block;
+        height: auto;
+    }
+
+    .inputTextReg1 {
+        font-size: 0.7em;
+    }
+
+    #inputData #inputButton button {
+        display: block;
+        margin-top: 10px;
+        margin-right: 3px;
+        width: 160px;
+        height: 20px;
+    }
+
+    #center_ {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #wrapperAbout {
+        float: left;
+        width: 100%;
+    }
+
+    #wrapperAbout #arc {
+        float: left;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #wrapperAbout arcticle {
+        float: left;
+        width: 31.3%;
+        border: 1px solid silver;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #fafafa;
+        margin-right: 2%;
+        min-height: auto;
+    }
+
+    #aboutUsImg {
+        width: 100%;
+        height: auto;
+        background: #CBEFFD;
+        box-sizing: border-box;
+    }
+
+    #aboutUsTxt {
+        float: left;
+        width: 100%;
+        background: #CBEFFD;
+        min-height: 100%;
+        padding: 1%;
+        box-sizing: border-box;
+        font-family: "Segoe Ui", sans-serif;
+    }
+
+    #aboutUsTxt a {
+        color: #245920
+    }
+
+    #aboutUsTxt a:hover {
+        color: #32C948;
+        text-decoration: none;
+        transition: all.3s ease;
+    }
+
+    #aboutUsTxt a:active {
+        color: #0036FF;
+        text-decoration: none;
+    }
+
+    #wrapperAbout1 {
+        width: 100%;
+    }
+
+    #wrapperAbout1 #arc1 {
+        width: 423px;
+        height: auto; 
+    }
+    /*инпут*/
+
+    input[type=text].search__ {
+        width: 170px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid #9D9D9D;
+        margin-top: 1%
+    }
+
+    input[type=text].inTxt {
+        width: 180px;
+        height: 25px;
+        border-radius: 5px;
+        border: 2px solid #9D9D9D;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    input[type=text].inTxt:focus {
+        border: 2px solid #32C948;
+    }
+
+    input[type=password].inTxt {
+        width: 180px;
+        height: 25px;
+        border-radius: 5px;
+        border: 2px solid #9D9D9D;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    input[type=password].inTxt:focus {
+        border: 2px solid #32C948;
+    }
+
+    input[type=button] {
+        display: block;
+        margin-top: 10px;
+        margin-right: 3px;
+        width: 160px;
+        height: 20px;
+    }
+
+
+
+    input[type=text].field {
+        border-radius: 5px;
+        border: 2px solid silver;
+        margin-left: 20px;
+    }
+
+    input[type=text].field:focus {
+        border: 2px solid #32C948;
+    }
+    /* Хедр и футер*/
+
+    header,
+    footer {
+        width: 98%;
+        background-color: #282923;
+        float: left;
+    }
+
+    header {
+        border-bottom: 2px solid silver;
+        padding: 1%;
+    }
+
+    footer {
+        border-top: 2px solid silver;
+        margin-top: 10px;
+        padding: 1%;
+        padding-bottom: 3%;
+    }
+
+    footer img {
+        width: 9%;
+        float: left;
+        margin-right: 10px;
+    }
