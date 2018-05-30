@@ -127,12 +127,12 @@ namespace DAL.EF
             context.UsersProfiles.Add(profileWorker3);
             #endregion
 
-            #region Rubrics
+            #region Headings
 
-            var head1 = new Heading { Id = 1, Name = "IT" };
-            var head2 = new Heading { Id = 2, Name = "HR специалисты - Бизнес-тренеры" };
-            var head3 = new Heading { Id = 3, Name = "Автобизнес - Сервисное обслуживание" };
-            var head4 = new Heading { Id = 4, Name = "Административный персонал - Водители - Курьеры" };
+            var head1 = new Heading { Id = 1, Name = "Айти(IT)" };
+            var head2 = new Heading { Id = 2, Name = "HR managers" };
+            var head3 = new Heading { Id = 3, Name = "Автобизнес" };
+            var head4 = new Heading { Id = 4, Name = "Административный клас - Водители - Курьеры" };
             var head5 = new Heading { Id = 5, Name = "Банки - Инвестиции - Лизинг" };
 
             context.Headings.Add(head1);
@@ -147,26 +147,26 @@ namespace DAL.EF
             var resume1 = new Resume
             {
                 Id = 1,
-                Title = "Junior QA Engineer",
-                Name = "Алексей",
-                Birthday = new DateTime(1990, 1, 10),
-                Phone = "256-587-1546",
-                Email = "KarenMDeberry@armyspy.com",
-                Portfolio = "https://github.com/xiaoshi316",
-                Payment = "400$",
-                Skills = "Programming languages: Java, C++, Visual Basic.\nDevelopment environment: IntelliJ IDEA, UIPath, AutomationAnywhere\n\nFrameWork: Selenium\n\nVCS : Git",
+                Title = "Junior Engineer",
+                Name = "Сергей",
+                Birthday = new DateTime(1987, 3, 11),
+                Phone = "265-555-1536",
+                Email = "Sergey@gmail.com",
+                Portfolio = "https://github.com/sergeys",
+                Payment = "550$",
+                Skills = "Programming languages: Java, C++, Visual Basic.\nDevelopment environment: IntelliJ IDEA, UIPath,Visual Studio, AutomationAnywhere\n\nFrameWork: Selenium\n\nVCS : Git",
                 UserId = profileWorker.Id,
                 HeadingId = head1.Id,
             };
             var resume2 = new Resume
             {
                 Id = 2,
-                Title = "Junior Software Engineer, Support Engineer",
-                Name = "Ruslan",
+                Title = "Junior Software Engineer",
+                Name = "Max",
                 Birthday = new DateTime(1995, 5, 10),
-                Phone = "205-324-5857",
-                Email = "NikitaVagin@armyspy.com",
-                Portfolio = "https://github.com/javlonsodikov",
+                Phone = "305-333-5657",
+                Email = "maxima@gmail.com",
+                Portfolio = "https://github.com/maximoch",
                 Payment = "800$",
                 Skills = "За время работы на ЗМК \"Запорожсталь\" приобрел солидный опыт написания и оптимизации SQL-запросов СУБД Oracle, также есть много разработок клиент-серверного ПО на Delphi под СУБД Interbase (Fierbird/Yaffi - полная разработка БД с нуля с написанием хранимых процедур, функций, триггеров и т.п.), большой опыт использования c модифицированным мною кодом FastReport, есть опыт создания своих Delphi-компонент для IDE Delphi, также большой опыт в написании VB-скриптов в MS-Excel и MS-Word  с использованием ADO/ODBC (СУБД Oracle/IB). Опыт работы с приложением Toad. Также был админом SQL-серверов Yaffil/Firebird, других специализированных серверов предприятия.",
                 UserId = profileWorker.Id,
@@ -175,14 +175,14 @@ namespace DAL.EF
             var resume3 = new Resume
             {
                 Id = 3,
-                Title = "Программист С++, JS, PHP, Delphi, SQL",
-                Name = "Вячеслав",
-                Birthday = new DateTime(1990, 1, 10),
-                Phone = "256-587-1546",
-                Email = "KarenMDeberry@armyspy.com",
-                Portfolio = "https://github.com/xiaoshi316",
-                Payment = "400$",
-                Skills = "Programming languages: Java, C++, Visual Basic.\nDevelopment environment: IntelliJ IDEA, UIPath, AutomationAnywhere\n\nFrameWork: Selenium\n\nVCS : Git",
+                Title = "Программист С#, JS, PHP, Delphi, SQL",
+                Name = "Владимир",
+                Birthday = new DateTime(1989, 7, 22),
+                Phone = "256-599-2521",
+                Email = "vladimirs@gmail.com",
+                Portfolio = "https://github.com/vladimiros",
+                Payment = "450$",
+                Skills = "Programming languages: Java, C#, Visual Basic.\nDevelopment environment: IntelliJ IDEA, UIPath,Visual Studio AutomationAnywhere\n\nFrameWork: Selenium\n\nVCS : Git",
                 UserId = profileWorker2.Id,
                 HeadingId = head3.Id,
             };
@@ -206,7 +206,7 @@ namespace DAL.EF
             {
                 Id = 2,
                 Company = "IT company",
-                LastPosition = "C# developer ",
+                LastPosition = "ASP.NET(C#) developer ",
                 StartDate = new DateTime(2011, 03, 1),
                 FinishDate = new DateTime(2013, 10, 1),
                 ResumeId = resume1.Id,
@@ -235,7 +235,7 @@ namespace DAL.EF
                 Company = "Codeminders",
                 City = "Киев",
                 ContName = "Codeminders",
-                ContPhone = "207-698-2959",
+                ContPhone = "223-667-2356",
                 Desctiption = "Based in the US since 2004,Codeminders develops software products for high-tech companies located predominantly in the Silicon Valley of California. While we specialize in a broad range of applications, our primary focus is on modern technologies such as social networks, mobile applications, video conference systems, cloud computing, etc. We have a constantly growing team of top-level specialists with proven ability to professionally design and deliver a diverse spectrum of projects. Codemindersis not a typical outsourcing company. Our clients select us primarily because we master the most challenging and diverse projects delivering them successfully and on schedule.",
                 HeadingId = head1.Id,
                 UserId = profileEmployer.Id,
@@ -246,7 +246,7 @@ namespace DAL.EF
                 Title = "C++ Developper",
                 Company = "CompanyName",
                 City = "Черкассы",
-                ContName = "ContactName",
+                ContName = "John",
                 ContPhone = "207-698-2959",
                 Desctiption = "Based in the US since 2004,Codeminders develops software products for high-tech companies located predominantly in the Silicon Valley of California. While we specialize in a broad range of applications, our primary focus is on modern technologies such as social networks, mobile applications, video conference systems, cloud computing, etc. We have a constantly growing team of top-level specialists with proven ability to professionally design and deliver a diverse spectrum of projects. Codemindersis not a typical outsourcing company. Our clients select us primarily because we master the most challenging and diverse projects delivering them successfully and on schedule.",
                 HeadingId = head1.Id,
