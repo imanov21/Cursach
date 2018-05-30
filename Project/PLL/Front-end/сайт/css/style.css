@@ -113,7 +113,11 @@
         width: 1330px;
         max-width: 100%;
         margin-top: 10px;
-        margin-bottom: 10px;
+    }
+
+    #menuhrefs a {
+        font-size: 15px;
+        font-family: "Segoe Ui", sans-serif;
     }
 
     #hr_ {
@@ -135,6 +139,15 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    #hrArt {
+        display: block;
+        width: 95%;
+        border: 1px solid #00B178;
+        height: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     /*основа страницы*/
 
     #wrapper {
@@ -154,7 +167,7 @@
         border: 1px solid silver;
         box-sizing: border-box;
         border-radius: 5px;
-        background-color: #fafafa;
+        background-color: #F8FFF2;;
         margin-right: 2%;
         margin-top: 2%;
         min-height: 150px;
@@ -180,6 +193,62 @@
 
     #wrapper #side_bar #search_ {
         width: 100%;
+    }
+
+    #vacancyTxt {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #company{
+        display: block;
+        font-family: "Segoe Ui", sans-serif;
+        margin-left: 30%;
+        padding-top: 2%;
+        color: #636563
+    }
+
+    #vacancyTxt label {
+        float: left;
+        font-family: "Segoe Ui", sans-serif;
+        font-size: 2em;
+        margin: 1%;
+        color: #00710B;
+    }
+
+    #resumeTxt {
+        display: block;
+        float: right;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #resumeTxt label {
+        float: right;
+        font-family: "Segoe Ui", sans-serif;
+        font-size: 2em;
+        margin: 1%;
+        color: #00710B;
+    }
+
+    #vacancyWrap{
+        width: 100%;
+        height: 70%;
+        float: left;
+    }
+
+    #vacancyWrap div{
+        height: 100%;
+        width: 30%;
+        float: left;
+        padding-top: 3%;
+        padding-left: 2%;
+    }
+
+    #vacancyWrap label{
+        
     }
 
     #input_search #input_search_ {
@@ -221,7 +290,7 @@
         font-size: 0.7em;
     }
 
-    #inputData #inputButton button {
+    #inputButton button {
         display: block;
         margin-top: 10px;
         margin-right: 3px;
@@ -294,7 +363,46 @@
 
     #wrapperAbout1 #arc1 {
         width: 423px;
-        height: auto; 
+        height: auto;
+    }
+
+    #vacancyForm {
+        width: 30%;
+        padding-bottom: 2%;
+        box-sizing: border-box;
+        background-color: #C6DDF0;
+        border: 1px solid silver;
+    }
+
+    #vacancyDiv {
+        margin-top: 2%;
+    }
+
+    #vacancyDiv textarea {
+        width: 350px;
+        border-radius: 3px;
+        border: 1px solid #4000B4;
+        margin-left: 5px;
+        margin-top: 2px;
+        padding: 2%;
+        padding-bottom: 0px;
+        font-size: 15px;
+        font-family: "Segoe Ui", sans-serif;
+        max-width: 80%;
+    }
+
+    #vacancyDiv select {
+        width: 370px;
+        height: 50px;
+        border-radius: 3px;
+        border: 1px solid #4000B4;
+        margin-left: 5px;
+        margin-top: 2px;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 15px;
+        font-family: "Segoe Ui", sans-serif;
+        max-width: 80%;
     }
     /*инпут*/
 
@@ -303,7 +411,8 @@
         height: 30px;
         border-radius: 5px;
         border: 2px solid #9D9D9D;
-        margin-top: 1%
+        margin-top: 1%;
+        font-family: "Segoe Ui", sans-serif
     }
 
     input[type=text].inTxt {
@@ -313,6 +422,7 @@
         border: 2px solid #9D9D9D;
         margin-left: 5px;
         margin-top: 2px;
+        font-family: "Segoe Ui", sans-serif;
     }
 
     input[type=text].inTxt:focus {
@@ -326,6 +436,7 @@
         border: 2px solid #9D9D9D;
         margin-left: 5px;
         margin-top: 2px;
+        font-family: "Segoe Ui", sans-serif;
     }
 
     input[type=password].inTxt:focus {
@@ -338,18 +449,53 @@
         margin-right: 3px;
         width: 160px;
         height: 20px;
+        font-family: "Segoe Ui", sans-serif;
     }
 
-
+    input[type=submit] {
+        display: block;
+        margin-top: 10px;
+        margin-right: 3px;
+        width: 160px;
+        height: 20px;
+        font-family: "Segoe Ui", sans-serif;
+    }
 
     input[type=text].field {
         border-radius: 5px;
         border: 2px solid silver;
         margin-left: 20px;
+        font-family: "Segoe Ui", sans-serif;
     }
 
     input[type=text].field:focus {
         border: 2px solid #32C948;
+    }
+
+    input[type=text].inVacancy {
+        width: 350px;
+        height: 50px;
+        border-radius: 3px;
+        border: 1px solid #4000B4;
+        margin-left: 5px;
+        margin-top: 2px;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 15px;
+        font-family: "Segoe Ui", sans-serif;
+        max-width: 80%;
+    }
+
+    input[type=text].inVacancy:focus {
+        border: 2px solid #32C948;
+    }
+
+    #vacancyDiv input[type="button"] {
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        color: #00808F;
+        font-family: "Segoe Ui", sans-serif
     }
     /* Хедр и футер*/
 

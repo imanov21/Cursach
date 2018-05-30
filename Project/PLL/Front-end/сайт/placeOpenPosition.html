@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Вакансии</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon1.ico">
+    <script src="sctipt/script.js"></script>
+</head>
+
+<body>
+    <div id="page-wrap">
+        <header>
+            <a id="logo" href="index.html" title="На главную">Работа</a>
+            <span class="contact">
+                <a href="about.html" title="Информация о нас">О нас</a></span>
+        </header>
+        <div class="clear">
+            <br/>
+        </div>
+        <center>
+            <div id="hr_">
+                Разместить вакансию
+                <hr/>
+            </div>
+            <form action="" id="vacancyForm" name="vacancyForm">
+                <div id="vacancyDiv">
+                    <input type="text" class="inVacancy" id="input1" name="input1" placeholder="Введите имя" autofocus>
+                    <br>
+                </div>
+                <div id="vacancyDiv">
+                    <textarea name="input2" id="" cols="45" rows="4" placeholder="Расскажите основную информацию о комании"></textarea>
+                    <br>
+                </div>
+                <div id="vacancyDiv">
+                    <textarea name="input3" id="" cols="45" rows="3" placeholder="Требуемые навыки"></textarea>
+                    <br>
+                </div>
+                <div id="vacancyDiv">
+                    <input type="text" class="inVacancy" name="input4" placeholder="Город">
+                    <br>
+                </div>
+                <div id="vacancyDiv">
+                    <input type="text" class="inVacancy" name="input5" placeholder="Заработная плата">
+                    <br>
+                </div>
+                <div id="vacancyDiv">
+                    <label for="typeОfEmployment">Выберите тип занятости</label>
+                    <br>
+                    <select name="typeОfEmployment" id="typeОfEmployment">
+                        <option value=""></option>
+                        <option value="Частичная">Частичная</option>
+                        <option value="Гибкий график">Гибкий график</option>
+                        <option value="Полная">Полная</option>
+                        <option value="Любая">Любая</option>
+                    </select> <br> <br>   
+                    <label for="placeOfWork">Выберите место работы</label>
+                    <br>
+                    <select name="placeOfWork" id="placeOfWork">
+                        <option value=""></option>
+                        <option value="Офис">Офис</option>
+                        <option value="Удаленно">Удаленно</option>
+                        <option value="Любое">Любое</option>
+                    </select> <br> <br>
+                <input type="button" value = "Подать вакансию" onclick="validVac(document.getElementById('vacancyForm'))"/>
+                </div>
+            </form>
+        </center>
+    </div>
+    </div>
+    <footer>
+        <span class="left">
+        <h3 id="h3_">Хотим сдать курсач &copy; 2018</h3>
+        <h6 id="h3_">Хотя бы на 3</h6>
+        </span>
+        <span class="right">
+            <img src="img/vkicon.ico" alt="Вк" title="Вк">
+            <h3 id="h3_">Навальный 20!8</h3>
+        </span>
+    </footer>
+</body>
+
+</html>

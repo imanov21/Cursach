@@ -12,9 +12,7 @@
 <body>
     <div id="page-wrap">
         <header>
-            <a id="logo" href="#" title="На главную">Вакансии</a>
-            <span class="contact">
-                <a href="about.html" title="Информация о нас">О нас</a></span>
+            <a id="logo" href="#" title="На главную">Работа</a>
         </header>
         <div class="clear">
             <br/>
@@ -27,7 +25,7 @@
         </center>
         <div id="inputData">
             <center>
-                <form id="formIn" action="" method="post" name="inputReg"">
+                <form id="formReg" action="" method="post" name="inputReg"">
                     <input type="text" name="name" class="inTxt" id="name" placeholder="Логин" autofocus>
                     <br>
                     <label class="inputTextReg1" for="name">Введите Логин</label>
@@ -47,10 +45,7 @@
                     <div id="hr_">
                         <hr/>
                     </div>
-                    <input type="button" value = "Зарегистрироваться" onclick="valid(document.getElementById('formIn'))">
-                   <!-- <div id="inputButton">
-                        <button name="button" title="Зарегистрироваться" onclick="valid(document.getElementById('formIn'))"> Зарегистрироваться</button>
-                    </div> -->
+                    <input type="button" value = "Зарегистрироваться" onclick="validReg(document.getElementById('formReg'))"/>
                 </form>
             </center>
         </div>
