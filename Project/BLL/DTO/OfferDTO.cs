@@ -9,12 +9,12 @@ namespace BLL.DTO
     public class OfferDTO
     {
         public int Id { get; set; }
-        public int CareerId { get; set; }
+        public int VacancyId { get; set; }
         public int ResumeId { get; set; }
         public DateTime DateSend { get; set; }
         public bool Checked { get; set; }
 
-        public virtual VacancyDTO Career { get; set; }
+        public virtual VacancyDTO Vacancy { get; set; }
         public virtual ResumeDTO Resume { get; set; }
     }
 }

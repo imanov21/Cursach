@@ -12,9 +12,9 @@ namespace DAL.Identity.Repositories
     {
         private WorkPlaceContext db;
 
-        private readonly ApplicationUserManager _userManager;
-        private readonly ApplicationRoleManager _roleManager;
-        private readonly IClientManager _clientManager;
+        private ApplicationUserManager _userManager;
+        private ApplicationRoleManager _roleManager;
+        private IClientManager _clientManager;
 
         public IdentityUnitOfWork(string connectionString)
         {

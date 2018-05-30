@@ -8,7 +8,7 @@ namespace DAL.Repositories
 {
     public class EfUnitOfWork : IUnitOfWork
     {
-        private readonly WorkPlaceContext _database;
+        private WorkPlaceContext _database;
         private IRepository<Vacancy> _vacancyRepository;
         private IRepository<Offer> _offerRepository;
         private IRepository<Resume> _resumeRepository;

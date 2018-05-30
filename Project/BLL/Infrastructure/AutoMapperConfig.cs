@@ -3,7 +3,7 @@ using BLL.DTO;
 using DAL.Entities;
 using DAL.Identity.Entities;
 
-namespace BLL.Services
+namespace BLL.Infrastructure
 {
     public class AutoMapperConfig
     {

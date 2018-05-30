@@ -11,8 +11,8 @@ namespace BLL.Interfaces
         void RemoveHeading(HeadingDTO headingDTO);
         void RemoveHeading(int id);
 
-        HeadingDTO GetRubricById(int id);
-        IEnumerable<HeadingDTO> GetAllRubrics();
+        HeadingDTO GetHeadingById(int id);
+        IEnumerable<HeadingDTO> GetAllHeadings();
 
         void Dispose();
     }

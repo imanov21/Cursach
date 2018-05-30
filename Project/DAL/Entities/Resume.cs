@@ -28,6 +28,9 @@ namespace DAL.Entities
         [Column(TypeName = "date")]
         public DateTime? Birthday { get; set; }
 
+        [StringLength(50)]
+        public string City { get; set; }
+
         [StringLength(25)]
         public string Phone { get; set; }
 

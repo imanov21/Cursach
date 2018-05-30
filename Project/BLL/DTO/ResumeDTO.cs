@@ -18,6 +18,7 @@ namespace BLL.DTO
         public string Title { get; set; }
         public string Name { get; set; }
         public DateTime? Birthday { get; set; }
+        public string City { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
         public int HeadingId { get; set; }

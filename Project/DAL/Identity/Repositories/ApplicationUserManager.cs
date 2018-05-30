@@ -10,7 +10,7 @@ namespace DAL.Identity.Repositories
         {
         }
 
-        public static ApplicationUserManager Create()
+        public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager>)
         {
             var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(/*DATACONTEXT*/));
             // Configure validation logic for usernames
@@ -28,6 +28,12 @@ namespace DAL.Identity.Repositories
                 //RequireLowercase = true,
                 //RequireUppercase = true,
             };
+
+            var dataProtectionProvider = options.DataProtectionProvider;
+            if (dataProtectionProvider != null)
+            {
+                manager.UserTokenProvider = new DataProtectorTokenProvider<ApplicationUser>(dataProtectionProvider.Create("ASP.NET Identity"));
+            }
 
             return manager;
         }

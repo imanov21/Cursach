@@ -6,9 +6,9 @@ using BLL.Interfaces;
 using DAL.Entities;
 using DAL.Interfaces;
 
-namespace BLl.Services
+namespace BLL.Services
 {
-    public class VanancyService : IVacancyService
+    public class VacancyService : IVacancyService
     {
         IUnitOfWork Database { get; set; }
 
@@ -20,43 +20,43 @@ namespace BLl.Services
             Database = unitOfWork;
         }
 
-        public void CreateVacancy(VacancyDTO vacancyDTO)
+        public override void CreateVacancy(VacancyDTO vacancyDTO)
         {
             if (vacancyDTO == null)
                 throw new ArgumentNullException(nameof(vacancyDTO));
 
-            if (vacancyDTO.Id != 0 && Database.Vacancy.Get(vacancyDTO.Id) != null)
+            if (vacancyDTO.Id != 0 && Database.Vacancies.Get(vacancyDTO.Id) != null)
                 throw new ArgumentOutOfRangeException("Found duplicate id career");
 
-            if (Database.Heading.Get(vacancyDTO.HeadingId) == null)
+            if (Database.Headings.Get(vacancyDTO.HeadingId) == null)
                 throw new ArgumentOutOfRangeException("Invalid argument rubricId");
 
-            Database.Heading.Create(Mapper.Map<VacancyDTO, Vacancy>(vacancyDTO));
+            Database.Vacancies.Create(Mapper.Map<VacancyDTO, Vacancy>(vacancyDTO));
             Database.Save();
         }
 
-        public void Dispose()
+        public override void Dispose()
         {
             Database.Dispose();
         }
 
-        public void EditCareer(CareerDTO careerDTO)
+        public override void EditVacancy(VacancyDTO vacancyDTO)
         {
-            if (careerDTO == null)
-                throw new ArgumentNullException(nameof(careerDTO));
+            if (vacancyDTO == null)
+                throw new ArgumentNullException(nameof(vacancyDTO));
 
-            Vacancy vacancy = Database.Vacancies.Get(careerDTO.Id);
+            Vacancy vacancy = Database.Vacancies.Get(vacancyDTO.Id);
 
             if (vacancy == null)
                 throw new ArgumentOutOfRangeException("Not found career");
 
-            if (Database.Headings.Get(careerDTO.RubricId) == null)
-                throw new ArgumentOutOfRangeException("Invalid argument rubricId");
+            if (Database.Headings.Get(vacancyDTO.HeadingId) == null)
+                throw new ArgumentOutOfRangeException("Invalid argument headingId");
 
             vacancy.Title = vacancyDTO.Title;
             vacancy.Company = vacancyDTO.Company;
-            vacancy.ContName = vacancyDTO.ContactName;
-            vacancy.ContPhone = vacancyDTO.ContactPhone;
+            vacancy.ContName = vacancyDTO.ContName;
+            vacancy.ContPhone = vacancyDTO.ContPhone;
             vacancy.HeadingId = vacancyDTO.HeadingId;
             vacancy.Desctiption = vacancyDTO.Desctiption;
 
@@ -66,7 +66,7 @@ namespace BLl.Services
             Database.Save();
         }
 
-        public void RemoveCareer(VacancyDTO vacancyDTO)
+        public override void RemoveVacancy(VacancyDTO vacancyDTO)
         {
             if (vacancyDTO == null)
                 throw new ArgumentNullException(nameof(vacancyDTO));
@@ -78,9 +78,9 @@ namespace BLl.Services
             Database.Save();
         }
 
-        public VacancyDTO GetCareerById(int id)
+        public override VacancyDTO GetVacancyById(int id)
         {
-            Career career = Database.Vacancies.Get(id);
+            Vacancy career = Database.Vacancies.Get(id);
 
             //if (career == null)
             //    throw new ArgumentOutOfRangeException("Not found career");
@@ -88,12 +88,12 @@ namespace BLl.Services
             return Mapper.Map<Vacancy, VacancyDTO>(career);
         }
 
-        public IEnumerable<VacancyDTO> GetAllCareers()
+        public override IEnumerable<VacancyDTO> GetAllVacancy()
         {
             return Mapper.Map<IEnumerable<Vacancy>, List<VacancyDTO>>(Database.Vacancies.GetAll());
         }
 
-        public void RemoveCareer(int id)
+        public override void RemoveVacancy(int id)
         {
             if (Database.Vacancies.Get(id) == null)
                 throw new ArgumentOutOfRangeException("Not found career");
@@ -102,14 +102,14 @@ namespace BLl.Services
             Database.Save();
         }
 
-        public IEnumerable<OfferDTO> GetOffers(int careerId)
+        public override IEnumerable<OfferDTO> GetOffers(int careerId)
         {
-            Vacancy career = Database.Vacancies.Get(careerId);
+            Vacancy vacancy = Database.Vacancies.Get(careerId);
 
-            if (career == null)
+            if (vacancy == null)
                 throw new ArgumentOutOfRangeException("Not found career");
 
-            return Mapper.Map<IEnumerable<Offer>, List<OfferDTO>>(career.Offers);
+            return Mapper.Map<IEnumerable<Offer>, List<OfferDTO>>(vacancy.Offers);
         }
     }
 }

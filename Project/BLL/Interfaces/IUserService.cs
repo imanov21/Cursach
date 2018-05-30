@@ -17,7 +17,7 @@ namespace BLL.Interfaces
         Task<Tuple<ClaimsIdentity, ClaimsIdentity>> FindAsync(string username, string password);
         Task<UserDTO> FindByIdAsync(string id);
 
-        IEnumerable<VacancyDTO> GetUserCareers(string id);
+        IEnumerable<VacancyDTO> GetUserVacancy(string id);
         IEnumerable<ResumeDTO> GetUserResumes(string id);
     }
 }
