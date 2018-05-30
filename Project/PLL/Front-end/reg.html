@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Логин</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon1.ico">
+    <script src="sctipt/script.js"></script>
+</head>
+
+<body>
+    <div id="page-wrap">
+        <header>
+            <a id="logo" href="#" title="На главную">Вакансии</a>
+            <span class="contact">
+                <a href="about.html" title="Информация о нас">О нас</a></span>
+        </header>
+        <div class="clear">
+            <br/>
+        </div>
+        <center>
+            <div id="hr_">
+               Регистрация
+                <hr/>
+            </div>
+        </center>
+        <div id="inputData">
+            <center>
+                <form id="formIn" action="" method="post" name="inputReg"">
+                    <input type="text" name="name" class="inTxt" id="name" placeholder="Логин" autofocus>
+                    <br>
+                    <label class="inputTextReg1" for="name">Введите Логин</label>
+                    <br>
+                    <input type="password" name="password1" class="inTxt" id="password1" placeholder="Пароль">
+                    <br>
+                    <label class="inputTextReg1" for="password">Введите Пароль</label>
+                    <br>
+                    <input type="password" name="password2" class="inTxt" id="password2" placeholder="Пароль еще раз">
+                    <br>
+                    <label class="inputTextReg1" for="rePassord">Проверка пароля</label>
+                    <br>
+                    <input type="text" name="controlWord" class="inTxt" id="controlWord" placeholder="Контрольное слово">
+                    <br>
+                    <label class="inputTextReg1" for="controlWord">Введите контрольное слово</label>
+                    <br>
+                    <div id="hr_">
+                        <hr/>
+                    </div>
+                    <input type="button" value = "Зарегистрироваться" onclick="valid(document.getElementById('formIn'))">
+                   <!-- <div id="inputButton">
+                        <button name="button" title="Зарегистрироваться" onclick="valid(document.getElementById('formIn'))"> Зарегистрироваться</button>
+                    </div> -->
+                </form>
+            </center>
+        </div>
+    </div>
+    <footer>
+        <span class="left">
+        <h3 id="h3_">Хотим сдать курсач &copy; 2018</h3>
+        <h6 id="h3_">Хотя бы на 3</h6>
+        </span>
+        <span class="right">
+            <img src="img/vkicon.ico" alt="Вк" title="Вк">
+            <h3 id="h3_">Навальный 20!8</h3>
+        </span>
+    </footer>
+</body>
+
+</html>
