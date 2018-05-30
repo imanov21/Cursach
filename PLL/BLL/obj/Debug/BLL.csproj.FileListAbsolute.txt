@@ -1,7 +1,0 @@
-c:\Users\TEST_2\documents\visual studio 2015\Projects\PLL\BLL\bin\Debug\BLL.dll
-c:\Users\TEST_2\documents\visual studio 2015\Projects\PLL\BLL\bin\Debug\BLL.pdb
-c:\Users\TEST_2\documents\visual studio 2015\Projects\PLL\BLL\bin\Debug\DAL.dll
-c:\Users\TEST_2\documents\visual studio 2015\Projects\PLL\BLL\bin\Debug\DAL.pdb
-c:\Users\TEST_2\documents\visual studio 2015\Projects\PLL\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-c:\Users\TEST_2\documents\visual studio 2015\Projects\PLL\BLL\obj\Debug\BLL.dll
-c:\Users\TEST_2\documents\visual studio 2015\Projects\PLL\BLL\obj\Debug\BLL.pdb
