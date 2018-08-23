@@ -196,6 +196,11 @@
     <Content Include="Front-end\сайт\sctipt\script.js" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\favicon1.ico" />
+    <Content Include="img\vkicon.ico" />
+    <Content Include="img\Антон.png" />
+    <Content Include="img\Таня.png" />
+    <Content Include="img\Я.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -224,8 +229,17 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Home\Main.cshtml" />
+    <Content Include="Views\Home\Reg.cshtml" />
+    <Content Include="Views\Shared\_Layout1.cshtml" />
+    <Content Include="Views\Home\ForgotPass.cshtml" />
+    <Content Include="Views\Home\Imanov.cshtml" />
+    <Content Include="Views\Home\Kononov.cshtml" />
+    <Content Include="Views\Home\Kovtunenko.cshtml" />
+    <Content Include="Views\Home\Position.cshtml" />
+    <Content Include="Views\Home\Resume.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

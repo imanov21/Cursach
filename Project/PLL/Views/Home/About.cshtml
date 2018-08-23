@@ -1,7 +1,41 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Про нас";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<center>
+    <div id="hr_">
+        О нас
+        <hr/>
+    </div>
+</center>
+<div id="wrapperAbout">
+    <div id="arc">
+        <arcticle>
+            <div id="aboutUsImg">
+                <img src="/img/Я.png" alt="Кононов Даниил">
+            </div>
+            <div id="aboutUsTxt">
+                <h3>@Html.ActionLink("Кононов Даниил Андреевич", "Kononov", "Home")</h3>
+                Front-end developer <br />
+            </div>
+        </arcticle>
+        <arcticle>
+            <div id="aboutUsImg">
+                <img src="/img/Таня.png" alt="Ковтуненко Татьяна">
+            </div>
+            <div id="aboutUsTxt">
+                <h3>@Html.ActionLink("Ковтуненко Татьяна Александровна", "Kovtunenko", "Home")</h3>
+                Tester<br />
+            </div>
+        </arcticle>
+        <arcticle>
+            <div id="aboutUsImg">
+                <img src="/img/Антон.png" alt="Иманов Антон">
+            </div>
+            <div id="aboutUsTxt">
+                <h3>@Html.ActionLink("Иманов Антон Мамедович", "Imanov", "Home")</h3>
+                Back-end developer<br />
+            </div>
+        </arcticle>
+    </div>
+</div>

@@ -13,6 +13,26 @@ namespace PLL.Controllers
             return View();
         }
 
+        public ActionResult Main()
+        {
+
+            return View();
+        }
+
+        public ActionResult Reg()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult ForgotPass()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -20,9 +40,37 @@ namespace PLL.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Kononov()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Imanov()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Kovtunenko()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Position()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Resume()
+        {
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }

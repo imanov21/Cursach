@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Position";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Position</h2>
+
+<center>
+    <div id="hr_">
+        Разместить вакансию
+        <hr />
+    </div>
+    @using (Html.BeginForm("Main", "Home", new { action = "", id = "vacancyForm", name = "vacancyForm" }))
+    {
+        <div id="vacancyDiv">
+            <input type="text" class="inVacancy" id="input1" name="input1" placeholder="Введите имя" autofocus>
+            <br>
+        </div>
+        <div id="vacancyDiv">
+            <textarea name="input2" id="" cols="45" rows="4" placeholder="Расскажите основную информацию о комании"></textarea>
+            <br>
+        </div>
+        <div id="vacancyDiv">
+            <textarea name="input3" id="" cols="45" rows="3" placeholder="Требуемые навыки"></textarea>
+            <br>
+        </div>
+        <div id="vacancyDiv">
+            <input type="text" class="inVacancy" name="input4" placeholder="Город">
+            <br>
+        </div>
+        <div id="vacancyDiv">
+            <input type="text" class="inVacancy" name="input5" placeholder="Заработная плата">
+            <br>
+        </div>
+        <div id="vacancyDiv">
+            <label for="typeОfEmployment">Выберите тип занятости</label>
+            <br>
+            <select name="typeОfEmployment" id="typeОfEmployment">
+                <option value=""></option>
+                <option value="Частичная">Частичная</option>
+                <option value="Гибкий график">Гибкий график</option>
+                <option value="Полная">Полная</option>
+                <option value="Любая">Любая</option>
+            </select> <br> <br>
+            <label for="placeOfWork">Выберите место работы</label>
+            <br>
+            <select name="placeOfWork" id="placeOfWork">
+                <option value=""></option>
+                <option value="Офис">Офис</option>
+                <option value="Удаленно">Удаленно</option>
+                <option value="Любое">Любое</option>
+            </select> <br> <br>
+            <button type="submit" title="Подать вакансию" value="Подать вакансию" onclick="validVac(document.getElementById('vacancyForm'))">Подать вакансию</button>
+        </div>
+    }
+</center>

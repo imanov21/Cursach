@@ -1,6 +1,7 @@
 ﻿using DAL.Identity.Entities;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity.Owin;
 
 namespace DAL.Identity.Repositories
 {
@@ -10,7 +11,7 @@ namespace DAL.Identity.Repositories
         {
         }
 
-        public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager>)
+        public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options)
         {
             var manager = new ApplicationUserManager(new UserStore<ApplicationUser>(/*DATACONTEXT*/));
             // Configure validation logic for usernames

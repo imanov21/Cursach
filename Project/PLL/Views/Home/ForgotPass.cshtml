@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "ForgotPass";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<center>
+    <div id="hr_">
+        Забыли пароль?
+        <hr/>
+    </div>
+</center>
+<div id="inputData">
+    <center>
+        @using (Html.BeginForm("Index", "Home", new { action = "", id = "forgotForm", name = "forgotForm", method = "post" }))
+        {
+            <input class="inTxt" type="text" id="log" name="log" placeholder="Логин" id="log" autofocus> <br>
+            <label class="inputTextReg1" for="log">Введите ваш логин</label>
+            <br>
+            <input class="inTxt" type="text" id="controlWord" name="controlWord" placeholder="Проверочное слово"> <br>
+            <label class="inputTextReg1" for="controlWord"> Введите проверочное слово</label>
+            <br>
+            <button type="submit" title="Подтвердить" value="Подтвердить" onclick="forgotPass(document.getElementById('forgotForm'))">Подтвердить</button>
+        }
+        <div id="hr_">
+            <hr />
+        </div>
+    </center>
+</div>
+

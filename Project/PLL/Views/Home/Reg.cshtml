@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Reg";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<center>
+    <div id="hr_">
+        Регистрация
+        <hr/>
+    </div>
+</center>
+<div id="inputData">
+    <center>
+        @using (Html.BeginForm("Main", "Home", new { id = "formReg", action = "", method = "post", name = "imputReg" }))
+        {
+            <input type="text" name="name" class="inTxt" id="name" placeholder="Логин" autofocus>
+            <br>
+            <label class="inputTextReg1" for="name">Введите Логин</label>
+            <br>
+            <input type="password" name="password1" class="inTxt" id="password1" placeholder="Пароль">
+            <br>
+            <label class="inputTextReg1" for="password">Введите Пароль</label>
+            <br>
+            <input type="password" name="password2" class="inTxt" id="password2" placeholder="Пароль еще раз">
+            <br>
+            <label class="inputTextReg1" for="rePassord">Проверка пароля</label>
+            <br>
+            <input type="text" name="controlWord" class="inTxt" id="controlWord" placeholder="Контрольное слово">
+            <br>
+            <label class="inputTextReg1" for="controlWord">Введите контрольное слово</label>
+            <br>
+            <div id="hr_">
+                <hr />
+            </div>
+            <button type="submit" title="Зарегистрироваться",value="Зарегистрироваться" onclick="validReg(document.getElementById('formReg'))">Зарегистрироваться</button>
+        }
+
+
+    </center>
+</div>
+

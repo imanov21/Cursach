@@ -1,0 +1,10 @@
+﻿<header>
+    @Html.ActionLink("Работа", "Main", "Home", new { area = "" }, new { id = "logo" })
+    <span class="contact">
+        @Html.ActionLink("О нас", "About", "Home")
+    </span>
+    <input type="text" class="field" placeholder="Искать тут" />
+    <div class="right">
+        @Html.ActionLink("Выход", "Index", "Home", new { area = "" }, new { id = "logo" })
+    </div>
+</header>

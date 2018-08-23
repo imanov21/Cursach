@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "Main";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center>
+    <div id="menu">
+        Работа
+        <hr />
+        <div id="menuhrefs">
+            @Html.ActionLink("Разместить вакансию", "Position", "Home")
+            @Html.ActionLink("Разместить резюме", "Resume", "Home")
+        </div>
+    </div>
+</center>
+<div id="wrapper">
+    <div id="articles">
+        <article>
+            <div id="vacancyTxt">
+                @Html.Label("Вакансия")
+                <span id="company">Компания:</span>
+            </div>
+            <hr id="hrArt" />
+            <div id="vacancyWrap">
+                <div id="requiredCity">
+                    @Html.Label("Город:")
+                </div>
+                <div id="requiredSkill">
+                    @Html.Label("Навыки:")
+                </div>
+                <div id="wage">
+                    @Html.Label("Зарплата:")
+                </div>
+            </div>
+        </article>
+        <article>
+            <div id="resumeTxt">
+                @Html.Label("Резюме")
+                <span id="company">Компания:</span>
+            </div>
+            <hr id="hrArt" />
+            <div id="vacancyWrap">
+                <div id="requiredCity">
+                    @Html.Label("Город:")
+                </div>
+                <div id="requiredSkill">
+                    @Html.Label("Навыки:")
+                </div>
+                <div id="wage">
+                    @Html.Label("Зарплата:")
+                </div>
+            </div>
+        </article>
+        <article>
+            <div id="vacancyTxt">
+                @Html.Label("Вакансия")
+                <span id="company">Компания:</span>
+            </div>
+            <hr id="hrArt" />
+            <div id="vacancyWrap">
+                <div id="requiredCity">
+                    @Html.Label("Город:")
+                </div>
+                <div id="requiredSkill">
+                    @Html.Label("Навыки:")
+                </div>
+                <div id="wage">
+                    @Html.Label("Зарплата:")
+                </div>
+            </div>
+        </article>
+        <article>
+            <div id="resumeTxt">
+                @Html.Label("Резюме")
+                <span id="company">Компания:</span>
+            </div>
+            <hr id="hrArt" />
+            <div id="vacancyWrap">
+                <div id="requiredCity">
+                    @Html.Label("Город:")
+                </div>
+                <div id="requiredSkill">
+                    @Html.Label("Навыки:")
+                </div>
+                <div id="wage">
+                    @Html.Label("Зарплата:")
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="side_bar">
+        <aside>
+            <div id="search_">
+                <div id="skill_search_">
+                    Поиск по навыкам
+                </div>
+                <div id="input_search">
+                    <center>
+                        <input type="text" class="search__" placeholder="Искать тут" />
+                    </center>
+                    @using (Html.BeginForm("", ""))
+                    {
+                        <button type="button" id="search_btn">Искать</button>
+                    }
+                </div>
+            </div>
+            <hr id="hr_side" />
+        </aside>
+    </div>
+</div>
+
