@@ -2334,10 +2334,11 @@
       ]
     },
     "Microsoft.AspNet.Mvc/5.2.6": {
-      "sha512": "kBiyGUUBLE8JyQDTdmsBW0MyKg3VbB6FCrhu2pZiT9uOdS7uqADryIApWnUWmzDj4+4Q3/c/sgBM+Y+kDUFTyg==",
+      "sha512": "xc3kLQOxvb6wje+RCIM++YGSynyNremq4Q7pvbi3e9QUsCujUNcp3mQk1F6HLmV4hk1/0LAuTvr8fXVIxzkxdw==",
       "type": "package",
       "path": "microsoft.aspnet.mvc/5.2.6",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "Content/Web.config.install.xdt",
         "Content/Web.config.uninstall.xdt",
@@ -2348,10 +2349,11 @@
       ]
     },
     "Microsoft.AspNet.Mvc.ru/5.2.6": {
-      "sha512": "mSRupdkXP+S8uwn2XOy6+E4RdKPyYhL9meILdnbzwJ52wifMQNf+mXvA1LCTJPxm1RIToJd4EMx0jqKsHpcwjQ==",
+      "sha512": "LLOirUxqZTpC3B1OyECjLC5p9DR175Pwcd7PN6Tn1OIwUF8iEMHV0lX9Ru3xs4kpTwHlqWEMZMiFi6v7fXFhVw==",
       "type": "package",
       "path": "microsoft.aspnet.mvc.ru/5.2.6",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/ru/System.Web.Mvc.resources.dll",
         "lib/net45/ru/System.Web.Mvc.xml",
@@ -2360,10 +2362,11 @@
       ]
     },
     "Microsoft.AspNet.Razor/3.2.6": {
-      "sha512": "AmdtrCaQtafgIzjaJjWjntWCE28c9CZnwSOFBC7zqt9OWJ9+uaxDQYSF1CHlyQOgTCzU7U9kux45cEoXXrwGDw==",
+      "sha512": "SeQP/YT8LUXLCcJxFYbzq4HbxlgasSa82QMNOJ0baulIzR/0O94SLwFx5LUPMllzEPEEYWc2RVD9MjX0kZqbHQ==",
       "type": "package",
       "path": "microsoft.aspnet.razor/3.2.6",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/System.Web.Razor.dll",
         "lib/net45/System.Web.Razor.xml",
@@ -2372,10 +2375,11 @@
       ]
     },
     "Microsoft.AspNet.WebPages/3.2.6": {
-      "sha512": "Cr2MOsKLhxR0aM5LlrTKYPxbDZk8IIdEyxm7qcs8v1hn7VFgk9igvCM4R/sYqy6MN+9v3ry77D7aCsp542t1Dw==",
+      "sha512": "9hs3VXiIkgduioOf6Q9Iwucfam1J1jYN/sdO+bie5k7OXYumHYuyEcyZ4yNQeBJGFqWDPVqMjdKdMuIa1emz/Q==",
       "type": "package",
       "path": "microsoft.aspnet.webpages/3.2.6",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "Content/Web.config.install.xdt",
         "Content/Web.config.uninstall.xdt",
@@ -2824,10 +2828,12 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "sha512": "5BdAWDgMNwf90L0J+C/eh6kfHDa37ViL1cBL1nv5zPA4TB2cGV51YiQyvzCEy9DBE0LwwMI4+PkUpIekKyocSA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
@@ -3173,10 +3179,11 @@
       ]
     },
     "MSTest.TestAdapter/1.3.1": {
-      "sha512": "/wlaxkvOC1snNN94e2DMACPsan3C0u/5hSC/zIwFM2Y8FXL2EF7gkwpGwaOGrUZZDdq49TrwtQf3oj5d5FS/Yg==",
+      "sha512": "K9Dp0Tz0ZThw/umHauDnEqZFn/184kqG2mCu5Q0+oKdEvQohZQ3wWikTCdzsapcO/2E+gvWskhEF5/9UjdE7tA==",
       "type": "package",
       "path": "mstest.testadapter/1.3.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/_common/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll",
         "build/_common/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll",
@@ -3233,10 +3240,11 @@
       ]
     },
     "MSTest.TestFramework/1.3.1": {
-      "sha512": "PyICX1QmF+1mgpKAuciARBOjB8HexT+38xazVWtTWqjiaIY9EyQkA2d3Np5bvgXFlzig+kIytIXwzWGxulizTw==",
+      "sha512": "O4afGoW6V8wnGRuJwGHqqMy6AjoD7ahXew1nq6bS5GXdVHe1TlnJYhcKOpd+fPR2JcSIQ0sMIDw/NXF0q7RX5A==",
       "type": "package",
       "path": "mstest.testframework/1.3.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML",
         "lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll",
@@ -6621,10 +6629,11 @@
       ]
     },
     "System.Threading.Tasks.Extensions/4.5.0": {
-      "sha512": "cWndlAQKAhHfsS6rZbYEE07HXJI9dPdyMAPOXXnVUO+hm+3G6qneMIqLDesoNBiVAPsKErsUVa2N/FRSKi+SeA==",
+      "sha512": "csAJe24tWCOTO/rXoJAuBGuOq7ZdHY60XtC6b/hNMHT9tuX+2J9HK7nciLEtNvnrRLMxBACLXO3R4y5+kCduMA==",
       "type": "package",
       "path": "system.threading.tasks.extensions/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -6725,10 +6734,11 @@
       ]
     },
     "System.ValueTuple/4.5.0": {
-      "sha512": "xZtSZNEHGa+tGsKuP4sh257vxJ/yemShz4EusmomkynMzuEDDjVaErBNewpzEF6swUgbcrSQAX3ELsEp1zCOwA==",
+      "sha512": "fa3P1cPe2SlrjCjJ/yc3mcXkDj4GQORmileNFYBtBZh2qddzwRubagAkj8yz/yF9oLvJVqaZYar9l2SCqNKDJg==",
       "type": "package",
       "path": "system.valuetuple/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -7243,11 +7253,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\Cursach\\Project\\UnitTest\\UnitTest.csproj",
+      "projectUniqueName": "D:\\Github\\Cursach\\Cursach\\Project\\UnitTest\\UnitTest.csproj",
       "projectName": "UnitTest",
-      "projectPath": "C:\\Github\\Cursach\\Project\\UnitTest\\UnitTest.csproj",
+      "projectPath": "D:\\Github\\Cursach\\Cursach\\Project\\UnitTest\\UnitTest.csproj",
       "packagesPath": "C:\\Users\\Antoha\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\Cursach\\Project\\UnitTest\\obj\\",
+      "outputPath": "D:\\Github\\Cursach\\Cursach\\Project\\UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7266,11 +7276,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Github\\Cursach\\Project\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Github\\Cursach\\Project\\BLL\\BLL.csproj"
+            "D:\\Github\\Cursach\\Cursach\\Project\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\Github\\Cursach\\Cursach\\Project\\BLL\\BLL.csproj"
             },
-            "C:\\Github\\Cursach\\Project\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Github\\Cursach\\Project\\DAL\\DAL.csproj"
+            "D:\\Github\\Cursach\\Cursach\\Project\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\Github\\Cursach\\Cursach\\Project\\DAL\\DAL.csproj"
             }
           }
         }
@@ -7387,7 +7397,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"EntityFramework 6.2.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -7397,7 +7407,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.AspNet.Mvc 5.2.6\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.AspNet.Mvc 5.2.6' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Mvc",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -7407,7 +7417,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.AspNet.Mvc.ru 5.2.6\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.AspNet.Mvc.ru 5.2.6' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Mvc.ru",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -7417,7 +7427,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.AspNet.Razor 3.2.6\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.6' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Razor",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -7427,7 +7437,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.AspNet.WebPages 3.2.6\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.6' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebPages",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -7437,7 +7447,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.UnitTestFramework.Extensions 1.0.0.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.UnitTestFramework.Extensions 1.0.0.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.UnitTestFramework.Extensions",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -7447,7 +7457,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Microsoft.Web.Infrastructure 1.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Web.Infrastructure",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
@@ -7457,7 +7467,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"Moq 4.5.28\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'Moq 4.5.28' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Moq",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
